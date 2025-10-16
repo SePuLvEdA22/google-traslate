@@ -50,6 +50,7 @@
 
       <div class="target-language">
         <select id="targetLanguage">
+          <option value="auto">Auto Detect</option>
           <option value="en">English</option>
           <option value="es">Spanish</option>
           <option value="fr">French</option>
@@ -64,6 +65,42 @@
       </div>
      </section>
     <!-- Text Area -->
+     <main class="translation-area">
+      <section class="input-section">
+        <div class="textarea-container">
+          <textarea 
+            id="inputText" 
+            placeholder="Type or paste text to translate"
+            maxlength="5000"></textarea>
+        </div>
+        <footer class="input-controls">
+          <button class="icon-button mic-button">
+            <span class="material-symbols-outlined">
+              mic
+            </span>
+          </button>
+        </footer>
+      </section>
+      <section class="output-section">
+        <div class="textarea-container">
+          <output id="outputText"></output>
+
+          <footer class="output-controls">
+            <button class="icon-button copy-button">
+              <span class="material-symbols-outlined">
+                content_copy
+              </span>
+            </button>
+
+            <button class="icon-button speaker-button" id="speakerButton">
+              <span class="material-symbols-outlined">
+                volume_up
+              </span>
+            </button>
+          </footer>
+        </div>
+      </section>
+     </main>
 
   </div>
 </body>
